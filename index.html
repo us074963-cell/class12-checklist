@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Class 12 CBSE Checklist (2025-26)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="left">
+      <h1>Class 12 Checklist</h1>
+      <p class="sub">Physics · Chemistry · Mathematics  *(2025-26)</p>
+    </div>
+    <div class="controls">
+      <select id="subject-filter" aria-label="Filter by subject">
+        <option value="all">All subjects</option>
+        <option value="physics">Physics</option>
+        <option value="chemistry">Chemistry</option>
+        <option value="math">Mathematics</option>
+      </select>
+      <input id="search" type="search" placeholder="Search topics or chaptersâ€¦" />
+      <button id="theme-toggle" title="Toggle theme">¶</button>
+    </div>
+  </header>
+
+  <main id="app">
+    <section id="progress">
+      <div id="progress-bar">
+        <div id="progress-fill"></div>
+      </div>
+      <div id="progress-text">0% done</div>
+    </section>
+
+    <nav id="subjects">
+      <!-- Sections inserted by app.js -->
+    </nav>
+
+    <footer class="footer">
+      <small>Progress saved on this device. Works offline. Share the folder or host on GitHub.</small>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
